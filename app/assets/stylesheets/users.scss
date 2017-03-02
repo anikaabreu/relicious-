@@ -8,7 +8,8 @@
 
 body {
  background-image: image_url('BGseed.jpg');
-	font-family: 'Isabella Script';
+ font-family: font-url( asset_path('Isabella Script Monoline.woff')) format('woff')
+	// font-family: 'Isabella Script';
   background-size: auto;
   height: 100%;
   width: 100%;
@@ -28,7 +29,7 @@ body {
 
 @font-face {
 	font-family: 'Isabella Script';
-	src: url('/assets/Isabella_Script');
+	src: asset-url('/assets/Isabella_Script');
 	}
 
 //LOGO ANIMATION//
