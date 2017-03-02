@@ -195,7 +195,7 @@ text {
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
     .logo {
-      font-size: 7.5em;
+      font-size: 8.5em;
     }
 }
 
@@ -206,7 +206,7 @@ text {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
     .logo {
-      font-size: 7.5em;
+      font-size: 8.5em;
     }
 }
 
@@ -217,7 +217,7 @@ text {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
     .logo {
-      font-size: 7.5em;
+      font-size: 8.5em;
     }
 }
 
@@ -228,7 +228,7 @@ and (max-device-width : 1024px)  {
     background-size: cover;
     // background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 117vh;
     width: 100vh;
   }
 
@@ -237,7 +237,7 @@ and (max-device-width : 1024px)  {
     padding: 98px;
     position: relative;
     left: 117px;
-    font-size: 16.5em;
+    font-size: 19.5em;
   }
 }
 /* ----------- Galaxy S3 ----------- */
