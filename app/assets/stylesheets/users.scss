@@ -122,9 +122,10 @@ text {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .logo {
-      font-size: 6.5em;
+      font-size: 7em;
       position: relative;
-      bottom: 40px;
+      bottom: 26px;
+      margin: 187px auto;
     }
 }
 
@@ -134,10 +135,10 @@ text {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    h1 .logo {
-      font-size: 6.5em;
-      padding: 220px;
-    }
+    font-size: 7em;
+    position: relative;
+    bottom: 26px;
+    margin: 187px auto;
 }
 
 /* Landscape */
@@ -146,10 +147,10 @@ text {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    .logo {
-      font-size: 7.5em;
-      padding: 220px;
-    }
+    font-size: 7em;
+    position: relative;
+    bottom: 26px;
+    margin: 187px auto;
 }
 
 /* ----------- iPhone 6 ----------- */
