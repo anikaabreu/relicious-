@@ -31,6 +31,53 @@ body {
 	src: url('/assets/Isabella_Script');
 	}
 
+//LOGO ANIMATION//
+text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: draw 8s forwards;
+}
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: draw 8s forwards;
+  -moz-animation: draw 8s forwards;
+  -o-animation: draw 8s forwards;
+  -ms-animation: draw 8s forwards;
+  animation: draw 8s forwards;
+}
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-ms-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
 //MEDIA QUERIES//
 /* ----------- iPhone 4 and 4S ----------- */
 
@@ -270,8 +317,10 @@ and (max-device-width : 1024px)  {
   and (-webkit-device-pixel-ratio: 3) {
     .logo {
       font-size: 7.5em;
+      margin: 207px auto;
+      position: relative;
+      left: 41px;
     }
-}
 
 /* Portrait */
 @media screen
@@ -281,6 +330,9 @@ and (max-device-width : 1024px)  {
   and (orientation: portrait) {
     .logo {
       font-size: 7.5em;
+      margin: 207px auto;
+      position: relative;
+      left: 41px;
     }
 }
 
@@ -292,5 +344,8 @@ and (max-device-width : 1024px)  {
   and (orientation: landscape) {
     .logo {
       font-size: 7.5em;
+      margin: 207px auto;
+      position: relative;
+      left: 41px;
     }
 }
