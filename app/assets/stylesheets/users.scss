@@ -1,7 +1,32 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body, html {
-  background-image: url('file:///Users/mikosflower/Documents/wyncode/relicious/todd-quackenbush-700.jpg');
-  background-size: cover;
+// 
+// @-ms-viewport{
+//   width: -width;
+// }
+
+body {
+ background-image: image_url('BGseed.jpg');
+	font-family: 'Isabella Script';
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
 }
+
+.logo {
+  color: #FFFCF0;
+  font-weight: 100;
+  text-align: center;
+
+  padding: 0;
+  margin: 220px auto;
+  font-size: 11.5em;
+}
+
+@font-face {
+	font-family: 'Isabella Script';
+	src: url('/assets/Isabella_Script');
+	}
