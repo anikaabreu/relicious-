@@ -28,7 +28,7 @@ body {
 
 @font-face {
 	font-family: 'Isabella Script';
-	src: url("<%= asset_path('/assets/Isabella_Script')%>");
+	src: font-url("Isabella_Script");
 }
 
 //LOGO ANIMATION//
