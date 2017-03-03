@@ -10,6 +10,7 @@ end
 gem 'normalize-rails'
 gem 'rails', '~> 5.0.1'
 # Use postgresql as the database for Active Record
+gem 'rails_12factor'
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
