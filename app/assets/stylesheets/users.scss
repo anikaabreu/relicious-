@@ -7,7 +7,7 @@
 // }
 
 body {
- background-image: image_url('BGseed.jpg');
+ // background-image: image_url('BGseed.jpg');
 	font-family: 'Isabella Script';
   background-size: auto;
   height: 100%;
@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-  color: #FFFCF0;
+  // color: #FFFCF0;
   font-weight: 100;
   text-align: center;
 
@@ -31,6 +31,11 @@ body {
 	src: font-url("Isabella_Script.woff");
 }
 
+
+.signups {
+  font-size: 5em;
+
+}
 //LOGO ANIMATION//
 text {
   stroke-dasharray: 1000;

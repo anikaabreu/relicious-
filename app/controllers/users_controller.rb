@@ -24,6 +24,14 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+    user = User.new(user_params)
+      if user.authenticate(params[:password])
+      session[:user_id] = user.id
+      redirect_to '/'
+    else
+      redirect_to '/signup'
+    end
+
     @user = User.new(user_params)
 
     respond_to do |format|
@@ -54,6 +62,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    session[:user_id] = nil
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
@@ -69,6 +78,7 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
+
     end
 end
