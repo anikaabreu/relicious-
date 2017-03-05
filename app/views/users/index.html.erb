@@ -1,41 +1,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <h1 class="logo">Relicious</h1>
+<div id="fb-root"></div>
 
-<em><%= notice %></em>
-<% if current_user %>
-  Welcome <%= current_user.name %>!
-  <%= link_to "Sign Out", logout_path %>
-  <%= current_user.user_likes %>
-<% else %>
-  <div class="signups">Please sign in!<br>
-  <%= link_to "Sign in with Facebook", facebook_login_path, id: 'login-link' %>
-<% end %></div>
-<div class="signups">
-<%= form_for :user, url: '/users' do |f| %>
+<h2>Facebook</h2>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=629177267279104";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
+<!-- <div scope= "email" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div> -->
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
-  <title>GifVault</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-# added these lines.
-<% if current_user %>
-  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-<% else %>
-  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-<% end %>
-</div>
-
-<%= yield %>
-
-</body>
-</html>
-<% end %>
+<!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button> -->
+<!-- <%= link_to 'steal token', facebook_token_path, id: 'token-transfer-link' %> -->
